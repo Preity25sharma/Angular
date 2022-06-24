@@ -183,7 +183,9 @@
                             </div>
                         </div>
                         <div class="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-primary">Reserve</button>
+                            <a role="button" class="btn btn-block nav-link btn-warning"
+                        data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
+                        data-placement="bottom" href="#reserveform">Reserve a Table</a>
                         </div>
                 </div>
                 </form>
@@ -243,6 +245,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
 </body>
 
 </html>
