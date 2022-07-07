@@ -37,7 +37,7 @@
                                 class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a data-toggle="modal">
                         <span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
@@ -202,7 +202,7 @@
                             <img src="img/logo.png" class="img-fluid">
                         </div>
                         <div class="col-6 col-sm ">
-                            <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal"
+                            <a role="button" class="btn btn-block nav-link btn-warning" 
                                 data-target="#reserveTable" data-html="true"
                                 title="Or Call us at  <br><strong>+852 12345678</strong>" data-placement="bottom"
                                 href="#reserveform">Reserve Table</a>
@@ -394,6 +394,15 @@
                 $("#carouselButton").children("span").addClass('fa-pause');                    
             }
         });
+
+        
+            window.onload = function () {
+                OpenBootstrapPopup();
+            };
+            function OpenBootstrapPopup() {
+                $("#reserveTable").modal('show');
+            }
+       
     </script>
 
 </body>
